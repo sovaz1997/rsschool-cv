@@ -1,9 +1,98 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>HTML, CSS & Git Basics</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Resume</h1>
+      <img class="photo" src="photo.jpg" alt="Фотография">
+      <section class="main-info">
+        <h2 class="visually-hidden">Main info</h2>
+        <p><strong>First name: </strong>Oleg</p>
+        <p><strong>Last Name: </strong>Smirnov</p>
+        <p><strong>Sex: </strong>Male</p>
+        <p><strong>Age: </strong>22</p>
+      </section>
+
+      <section class="contact-info">
+        <h2> Contact info</h2>
+        <p><strong>Phone number: </strong>+7 (926) 159-XX-XX</p>
+        <p><strong>VK: </strong><a href="http://vk.com/sovaz1997">vk.com/sovaz1997</a></p>
+      </section>
+
+      <section class="skills-info">
+        <h2>Skills</h2>
+        <p><strong>Programming languages</strong></p>
+        <ul>
+          <li>C/C++</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>Processing</li>
+          <li>JS</li>
+          <li>SQL</li>
+          <li>HTML/CSS (some SCSS, adaptive)</li>
+          <li>React and VueJS (superficially enough)</li>
+        </ul>
+        <p><strong>Version control</strong></p>
+        <ul>
+          <li>git</li>
+        </ul>
+      </section>
+
+      <section class="code-examples">
+        <h2>Code examples</h2>
+        <pre class='code'>
+@jit
+def testPoint(x, y, iters):
+  z0 = np.clongdouble(x + y * 1j)
+  
+  z = 0
+  n = 0
+
+  for n in range(iters + 1):
+    z = z ** 2 + z0
+    if abs(z) > 2:
+      break
+  
+  if n == iters:
+    return toColor(iters, iters)
+        </pre>
+      </section>
+
+      <section class="experience-info">
+        <h2>Experience</h2>
+
+        <p>For a long time I worked on my project for a chess program outside of school hours: <a href="https://github.com/sovaz1997/Zevra2">Zevra chess engine</a>.
+        Also, I worked on various projects in Processing and Python.</p>
+      </section>
+      <section class="education-info">
+        <h2>Education</h2>
+        <p><strong>Main:</strong></p>
+        <ul>
+          <li>Moscow Aviation Institute (MAI)</li>
+        </ul>
+
+        <p><strong>Online:</strong></p>
+        <ul>
+          <li>HTML Academy</li>
+          <li>Codeacademy</li>
+          <li>Stepik</li>
+          <li>Udemy</li>
+          <li>Own projects on different programing languages</li>
+
+        </ul>
+      </section>
+      <section class="english-info">
+        <h2>English</h2>
+        <p>I learn English mainly by reading technical literature and programming.</p>
+      </section>
+
+      <section class="summary-info">
+        <h2>Summary</h2>
+        <p>I want to study in order to be able to realize my creative potential. I have many ideas for my personal projects that I plan to implement.</p>
+      </section>
+    </div>
   </body>
 </html>
